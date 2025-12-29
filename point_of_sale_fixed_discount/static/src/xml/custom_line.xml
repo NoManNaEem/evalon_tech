@@ -1,0 +1,18 @@
+<templates id="template" xml:space="preserve">
+    <t t-inherit="point_of_sale.Orderline" t-inherit-mode="extension">
+        <xpath expr="//li[@t-if=&quot;line.price !== 0 and line.discount and line.discount !== &#39;0&#39; and !props.basic_receipt&quot;]" position="replace">
+            <li t-if="line.price !== 0 and line.fixedDiscount and line.fixedDiscount !== '0' and !props.basic_receipt">
+                <t t-esc="line.price_without_discount"/>
+                with a fixed discount of
+                <t t-esc="line.fixedDiscount"/>
+            </li>
+
+            <li t-elif="line.price !== 0 and line.discount and line.discount !== '0' and !props.basic_receipt">
+                <t t-esc="line.price_without_discount"/>
+                with a
+                <em><t t-esc="line.discount"/>%</em>
+                discount
+            </li>
+        </xpath>
+    </t>
+</templates>
