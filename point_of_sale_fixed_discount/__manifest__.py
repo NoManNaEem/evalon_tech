@@ -18,7 +18,7 @@ settings to enable or disable fixed discount mode.
     'website': "https://www.linkedin.com/company/evalontech/",
     'category': 'Point of Sale',
     'version': '18.0.1.0',
-    'license': 'Commercial',
+    'license': 'OPL-1',
     'currency': 'USD',
     'price': 20.00,
 
