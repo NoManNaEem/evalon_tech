@@ -32,6 +32,10 @@ settings to enable or disable fixed discount mode.
             'point_of_sale_fixed_discount/static/src/**/*',
         ],
     },
+    'images': [
+        'static/description/banner.png',
+        'static/description/icon.png',
+    ],
 
     "installable": True,
     "application": False,
