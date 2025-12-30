@@ -1,0 +1,24 @@
+<odoo>
+    <record id="view_invoice_percentage_wizard" model="ir.ui.view">
+        <field name="name">invoice.percentage.wizard.form</field>
+        <field name="model">invoice.percentage.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Invoice by Percentage">
+                <group>
+                    <field name="sale_order_line_id" invisible="1"/>
+                    <field name="remaining_percentage" readonly="1"/>
+                    <field name="percentage" help="Enter how much percentage of this line you want to invoice."/>
+                </group>
+                <footer>
+                    <button name="action_create_invoice"
+                            string="Create"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel"
+                            class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
