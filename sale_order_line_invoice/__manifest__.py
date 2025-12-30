@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Partial Invoicing by Percentage for Sale Order Lines (Progressive Billing)",
-    'summary': "Create partial invoices by percentage per sale order line — milestone & progressive billing for Odoo 18",
+    'summary': "Create partial invoices by percentage per sale order line milestone & progressive billing for Odoo 18",
     'description': """Partial Invoicing by Percentage for Sale Order Lines (Progressive Billing)
 =========================================================================
 
